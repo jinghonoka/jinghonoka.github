@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Family Meeting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>Family Meeting</h1>
+      <p>ryusuke・honoka</p>
+      <span class="scroll">scroll ↓</span>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <!-- 日時 -->
+    <section class="section fade">
+      <h2>Information</h2>
+      <div class="card">
+        <p>2026年5月24日（日） 11:30〜</p>
+        <p>梅の花<br>（270-0133 千葉県流山市おおたかの森3丁目-44-5）</p>
+      </div>
+    </section>
+
+    <!-- メッセージ -->
+    <section class="section fade">
+      <h2>Message</h2>
+      <p class="message">
+        予定空けていただきありがとうございます！<br>
+        少しながら自己紹介も込めてお互いのことを<br>知ってもらえたら嬉しいです☺️<br>
+        改めてこれからもどうぞよろしくお願いします！
+      </p>
+    </section>
+
+    <!-- メッセージ -->
+    <section class="section fade">
+      <h2>from now on</h2>
+      <p class="message">
+        2026年7月10日入籍:#7と#10👍<br>
+        2026年8月18日〜イタリア旅行🇮🇹✈️<br>
+        家：未定
+      </p>
+    </section>
+
+
+
+    <!-- プロフィール -->
+    <section class="section fade">
+      <h2>Profile</h2>
+      <div class="profile-grid">
+        <div class="profile-card">
+          <h3>Ryusuke</h3>
+          <img src="img/ryu.jpg" alt="Ryu" class="profile-image">
+          <p>生年月日：2000年3月17日<br>
+            血液型：AB型<br>
+            職業: 理学療法士<br>
+            趣味:サッカー、野球<br>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section fade">
+      <h2>Memories</h2>
+
+      <div class="slider">
+        <div class="slide-track">
+
+          <img src="img/1.jpg" alt="">
+          <img src="img/2.jpg" alt="">
+          <img src="img/3.jpg" alt="">
+          <img src="img/4.jpg" alt="">
+          <img src="img/5.jpg" alt="">
+          <img src="img/6.jpg" alt="">
+          <img src="img/7.jpg" alt="">
+          <img src="img/8.jpg" alt="">
+          <img src="img/9.jpg" alt="">
+
+          <!-- ループ用に複製 -->
+          <img src="img/1.jpg" alt="">
+          <img src="img/2.jpg" alt="">
+          <img src="img/3.jpg" alt="">
+          <img src="img/4.jpg" alt="">
+          <img src="img/5.jpg" alt="">
+          <img src="img/6.jpg" alt="">
+          <img src="img/7.jpg" alt="">
+          <img src="img/8.jpg" alt="">
+          <img src="img/9.jpg" alt="">
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section fade">
+
+      <div class="quiz-wrap">
+
+        <!-- Q1 -->
+        <div class="quiz-card">
+          <p class="quiz-title">
+            Q. 好きな食べ物は？
+          </p>
+
+          <div class="choices">
+            <button onclick="showAnswer(this, '正解！よく選びます')">アボカド</button>
+            <button onclick="showAnswer(this, '正解！')">エビ</button>
+            <button onclick="showAnswer(this, '不正解！ ')">とんこつラーメン</button>
+            <button onclick="showAnswer(this, '不正解！吐く')">角煮</button>
+          </div>
+
+          <p class="answer"></p>
+        </div>
+
+        <!-- Q2 -->
+        <div class="quiz-card">
+          <p class="quiz-title">
+            Q. 嫌いな食べ物は？
+          </p>
+
+          <div class="choices">
+            <button onclick="showAnswer(this, '正解！味がヤダ')">にんじん</button>
+            <button onclick="showAnswer(this, '不正解！')">ピーマン</button>
+            <button onclick="showAnswer(this, '不正解！')">セロリ</button>
+            <button onclick="showAnswer(this, '不正解！')">ブロッコリー</button>
+          </div>
+
+          <p class="answer"></p>
+        </div>
+
+        <!-- Q3 -->
+        <div class="quiz-card">
+          <p class="quiz-title">
+            Q. 好きなサッカー選手は？
+          </p>
+
+          <div class="choices">
+            <button onclick="showAnswer(this, '正解！')">ズラタン</button>
+            <button onclick="showAnswer(this, '不正解！')">ロナウド</button>
+            <button onclick="showAnswer(this, 'まあまあ正解！')">ラビオ</button>
+            <button onclick="showAnswer(this, '正解！')">小野瀬</button>
+          </div>
+
+          <p class="answer"></p>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- プロフィール -->
+    <section class="section fade">
+      <h2>Profile</h2>
+      <div class="profile-grid">
+        <div class="profile-card">
+          <h3>Honoka</h3>
+          <img src="img/hono.jpg" alt="Ryu" class="profile-image">
+          <p>生年月日：2000年6月1日<br>
+            血液型：o型<br>
+            職業: webデザイナー<br>
+            趣味:映画、芝生<br>
+            |基本マイペースです笑たくさん寝て沢山食べます🌻|
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade">
+      <h2>Memories</h2>
+
+      <div class="slider">
+        <div class="slide-track">
+
+          <img src="img/1-1.jpg" alt="">
+          <img src="img/1-2.jpg" alt="">
+          <img src="img/1-3.jpg" alt="">
+          <img src="img/1-4.jpg" alt="">
+          <img src="img/1-5.jpg" alt="">
+          <img src="img/1-6.jpg" alt="">
+          <img src="img/1-7.jpg" alt="">
+
+          <!-- ループ用に複製 -->
+          <img src="img/1-1.jpg" alt="">
+          <img src="img/1-2.jpg" alt="">
+          <img src="img/1-3.jpg" alt="">
+          <img src="img/1-4.jpg" alt="">
+          <img src="img/1-5.jpg" alt="">
+          <img src="img/1-6.jpg" alt="">
+          <img src="img/1-7.jpg" alt="">
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section fade">
+
+      <div class="quiz-wrap">
+
+        <!-- Q1 -->
+        <div class="quiz-card">
+          <p class="quiz-title">
+            Q. 好きな食べ物は？
+          </p>
+
+          <div class="choices">
+            <button onclick="showAnswer(this, 'まあまあ正解！寿司だと最近一番')">えんがわ</button>
+            <button onclick="showAnswer(this, '不正解！脂身NGです')">焼肉</button>
+            <button onclick="showAnswer(this, '不正解！あっさりなら🍜')">ラーメン</button>
+            <button onclick="showAnswer(this, '正解！豆腐と米と納豆 🍚')">納豆ご飯</button>
+          </div>
+
+          <p class="answer"></p>
+        </div>
+
+        <!-- Q2 -->
+        <div class="quiz-card">
+          <p class="quiz-title">
+            Q. 嫌いな食べ物は？
+          </p>
+
+          <div class="choices">
+            <button onclick="showAnswer(this, '正解！でもアジア料理好き')">パクチー</button>
+            <button onclick="showAnswer(this, 'まあまあ正解！味のしないのならOK')">にんじん</button>
+            <button onclick="showAnswer(this, '不正解！ピーマンと麺つゆの好き')">ピーマン</button>
+            <button onclick="showAnswer(this, 'まあまあ正解！シャキシャキはNG')">玉ねぎ</button>
+          </div>
+
+          <p class="answer"></p>
+        </div>
+
+        <!-- Q3 -->
+        <div class="quiz-card">
+          <p class="quiz-title">
+            Q. 小さい頃の夢は？
+          </p>
+
+          <div class="choices">
+            <button onclick="showAnswer(this, '不正解！妹の夢でした')">パティシエール</button>
+            <button onclick="showAnswer(this, '不正解！弟の夢でした')">トイザらスの店長</button>
+            <button onclick="showAnswer(this, '正解！アルバムに書いてあ理ました笑')">ディズニーのキャスト</button>
+            <button onclick="showAnswer(this, 'まあ正解！ディズニー関わることできたから運良く叶った')">デザイナー</button>
+          </div>
+
+          <p class="answer"></p>
+        </div>
+
+      </div>
+    </section>
+    <section class="section fade">
+      <h2>Lastly,</h2>
+      <p class="message">
+        最後まで見ていただきありがとうございました！<br>
+      </p>
+    </section>
+
+    <section class="section fade">
+
+      <div class="slider">
+        <div class="slide-track">
+
+          <img src="img/img1.jpg" alt="">
+          <img src="img/img2.jpg" alt="">
+          <img src="img/img3.jpg" alt="">
+          <img src="img/img4.jpg" alt="">
+          <img src="img/img5.jpg" alt="">
+          <img src="img/img6.jpg" alt="">
+          <img src="img/img7.jpg" alt="">
+
+          <!-- ループ用に複製 -->
+          <img src="img/img1.jpg" alt="">
+          <img src="img/img2.jpg" alt="">
+          <img src="img/img3.jpg" alt="">
+          <img src="img/img4.jpg" alt="">
+          <img src="img/img5.jpg" alt="">
+          <img src="img/img6.jpg" alt="">
+          <img src="img/img7.jpg" alt="">
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© Hono & Ryu</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
